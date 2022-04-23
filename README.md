@@ -14,6 +14,10 @@ _Solo descarga el proyecto y al momento de extraer podras abrir el archivo index
 
 _Principalmente esta hecho en JAVASCRIPT_
 
+## Ejemplo 👻
+
+![image](https://user-images.githubusercontent.com/103347375/164878329-d7253da5-1912-4f86-b318-d62b071700ea.png)
+
 ## Autores ✒️
 
 * **Angelo Velandia** - *Trabajo Inicial* - [angelovelandia](https://github.com/angelovelandia)
