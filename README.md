@@ -27,4 +27,4 @@ Este proyecto está bajo una Licencia Gratuita
 * Gracias a todos los que descarguen el proyecto y lo compartan 📢
 
 ---
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+⌨️ con ❤️ por [angelovelandia](https://github.com/angelovelandia) 😊
