@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sacar texto de imagen</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src='./jquery-3.5.1.js'></script>
+        <script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
+    </head>
+    <body>
+        <img id="img1" src="https://i1.wp.com/lenguajedeprogramacion.com/wp-content/uploads/2016/10/punterosHeadBueno.png?w=600&ssl=1"/>
+        <p id="p1">El texto es: </p>
+        <img id="img2" src="http://image.slidesharecdn.com/ppt-informatica-121118101642-phpapp01/95/ppt-informatica-3-638.jpg?cb=1353233854"/>
+        <p id="p2">El texto es: </p>        
+        <script>
+            var imagenReconocer = document.getElementById("img1");
+            Tesseract.recognize(imagenReconocer.src, {lang: 'spa'})
+                .then(function(result){
+                        document.getElementById("p1").innerText += result.text;
+                    });     
+            var imagenReconocer2 = document.getElementById("img2");
+            Tesseract.recognize(imagenReconocer2.src, {lang: 'spa'})
+                .then(function(result){
+                        document.getElementById("p2").innerText += result.text;
+                    });
+        </script>
+    </body>
+</html>
